@@ -4,7 +4,7 @@ Usage
 
 To use PyColorTerm in a project
 
-.. code:: python
+.. code-block:: python
 
     from pycolorterm import pycolorterm
     

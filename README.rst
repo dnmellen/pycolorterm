@@ -30,10 +30,15 @@ Features
 
 Getting started
 --------
+
+Installation
+===========
 .. code-block :: bash
 
     $ pip install pycolorterm
 
+Usage
+============
 .. code-block :: python
 
     from pycolorterm import pycolorterm

@@ -27,11 +27,11 @@ Features
 
 Getting started
 --------
-.. code:: bash
+.. code-block :: bash
 
     $ pip install pycolorterm
 
-.. code:: python
+.. code-block :: python
 
     from pycolorterm import pycolorterm
     with pycolorterm.pretty_output(pycolorterm.FG_GREEN) as out:

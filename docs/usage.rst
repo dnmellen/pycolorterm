@@ -2,9 +2,11 @@
 Usage
 ========
 
-To use PyColorTerm in a project::
+To use PyColorTerm in a project
 
-	from pycolorterm import pycolorterm
+.. code:: python
+
+    from pycolorterm import pycolorterm
     
     with pretty_output(FG_RED) as out:
         out.write('This is a test in RED')

@@ -21,6 +21,8 @@ Features
 --------
 
 * Get your line prints pretty with color and style formatting
+* Python 3 ready!
+* Pythonic
 
 
 Getting started

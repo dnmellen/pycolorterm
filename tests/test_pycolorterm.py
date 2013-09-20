@@ -53,4 +53,4 @@ class TestPycolorterm(unittest.TestCase):
         pass
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(module=__name__, buffer=True, exit=False)

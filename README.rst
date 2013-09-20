@@ -8,6 +8,9 @@ PyColorTerm
 .. image:: https://travis-ci.org/dnmellen/pycolorterm.png?branch=master
         :target: https://travis-ci.org/dnmellen/pycolorterm
 
+.. image:: https://coveralls.io/repos/dnmellen/pycolorterm/badge.png
+        :target: https://coveralls.io/r/dnmellen/pycolorterm
+
 .. image:: https://pypip.in/d/pycolorterm/badge.png
         :target: https://crate.io/packages/pycolorterm?version=latest
 

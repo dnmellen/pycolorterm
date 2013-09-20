@@ -20,4 +20,17 @@ PyColorTerm allows you to write colored and styled lines out in the terminal fro
 Features
 --------
 
-* TODO
+* Get your line prints pretty with color and style formatting
+
+
+Getting started
+--------
+.. code:: bash
+
+    $ pip install pycolorterm
+
+.. code:: python
+
+    from pycolorterm import pycolorterm
+    with pycolorterm.pretty_output(pycolorterm.FG_GREEN) as out:
+        out.write('Works OK!')

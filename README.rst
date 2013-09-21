@@ -41,6 +41,7 @@ Usage
 ============
 .. code-block :: python
 
-    from pycolorterm import pycolorterm
-    with pycolorterm.pretty_output(pycolorterm.FG_GREEN) as out:
-        out.write('Works OK!')
+    from pycolorterm.pycolorterm import pretty_output, styles
+
+    with pretty_output() as out:
+        out.write('This is {BOLD}awesome{END} {FG_RED}because{END} you can {UNDERSCORE}mix{END} {BG_BLUE}many styles easily{END}'.format(**styles))

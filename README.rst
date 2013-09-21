@@ -45,3 +45,8 @@ Usage
 
     with pretty_output() as out:
         out.write('This is {BOLD}awesome{END} {FG_RED}because{END} you can {UNDERSCORE}mix{END} {BG_BLUE}many styles easily{END}'.format(**styles))
+
+
+Result
+============
+.. image:: https://raw.github.com/dnmellen/pycolorterm/master/pycolorterm_example.png

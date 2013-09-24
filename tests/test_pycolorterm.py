@@ -11,7 +11,7 @@ Tests for `pycolorterm` module.
 import sys
 import unittest
 
-from pycolorterm.pycolorterm import pretty_output, styles
+from pycolorterm.pycolorterm import pretty_output, styles, print_pretty
 
 
 class TestPycolorterm(unittest.TestCase):
@@ -53,6 +53,14 @@ class TestPycolorterm(unittest.TestCase):
         with pretty_output() as out:
             out.write('This is {BOLD}awesome{END} {FG_RED}because{END} you can {UNDERSCORE}mix{END} {BG_BLUE}many styles easily{END}'.format(**styles))
         self.assertEquals(self._get_output(), 'This is \x1b[1mawesome\x1b[0m \x1b[31mbecause\x1b[0m you can \x1b[4mmix\x1b[0m \x1b[44mmany styles easily\x1b[0m\x1b[0m')
+
+    def test_print_pretty_red(self):
+        print_pretty('{FG_RED}This is a test in RED')
+        self.assertEquals(self._get_output(), '\x1b[31mThis is a test in RED\x1b[0m')
+
+    def test_print_pretty_complex(self):
+        print_pretty('{FG_RED}This{END} is a {BG_BLUE}{UNDERSCORE}more{END} complex {FG_GREEN}{BOLD}test')
+        self.assertEquals(self._get_output(), '\x1b[31mThis\x1b[0m is a \x1b[44m\x1b[4mmore\x1b[0m complex \x1b[32m\x1b[1mtest\x1b[0m')
 
     def tearDown(self):
         pass

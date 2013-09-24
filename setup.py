@@ -19,7 +19,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='pycolorterm',
-    version='0.1.3',
+    version='0.2.0',
     description='PyColorTerm allows you to write colored and styled lines out in the terminal from Python and in a pythonic way',
     long_description=readme + '\n\n' + history,
     author='Diego Navarro Mellén',

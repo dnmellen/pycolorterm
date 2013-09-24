@@ -41,10 +41,9 @@ Usage
 ============
 .. code-block :: python
 
-    from pycolorterm.pycolorterm import pretty_output, styles
+    from pycolorterm.pycolorterm import print_pretty
 
-    with pretty_output() as out:
-        out.write('This is {BOLD}awesome{END} {FG_RED}because{END} you can {UNDERSCORE}mix{END} {BG_BLUE}many styles easily{END}'.format(**styles))
+    print_pretty('This is {BOLD}awesome{END} {FG_RED}because{END} you can {UNDERSCORE}mix{END} {BG_BLUE}many styles easily{END}')
 
 
 Result

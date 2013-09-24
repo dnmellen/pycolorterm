@@ -4,6 +4,21 @@ Usage
 
 To use PyColorTerm in a project
 
+Using shortcut function
+-------------------------
+
+.. code-block:: python
+
+    from pycolorterm.pycolorterm import print_pretty
+
+    print_pretty('{FG_RED}This is a test in RED')
+
+    print_pretty('{FG_RED}This{END} is a {BG_BLUE}{UNDERSCORE}more{END} complex {FG_GREEN}{BOLD}test')
+
+
+Using context manager
+-----------------------
+
 .. code-block:: python
 
     from pycolorterm.pycolorterm import pretty_output, styles

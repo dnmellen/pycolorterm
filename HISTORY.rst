@@ -12,3 +12,8 @@ History
 ++++++++++++++++++
 
 * Revision with 100% code coverage
+
+0.2.0 (2013-09-24)
+++++++++++++++++++
+
+* Added new shortcut function to print with format (print_pretty)

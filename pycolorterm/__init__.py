@@ -3,4 +3,4 @@
 
 __author__ = 'Diego Navarro Mellén'
 __email__ = 'dnmellen@gmail.com'
-__version__ = '0.1.3'
+__version__ = '0.2.0'

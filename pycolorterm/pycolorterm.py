@@ -55,3 +55,19 @@ class pretty_output():
     def write(self, msg):
         style = ''.join(self.attributes)
         print('{}{}{}'.format(style, msg.replace(styles['END'], styles['ALL_OFF'] + style), styles['ALL_OFF']))
+
+def print_pretty(text, **kwargs):
+    '''
+    Prints using pycolorterm formatting
+
+    :param text: Text with formatting
+    :type text: string
+    :param kwargs: Keyword args that will be passed to the print function
+    :type kwargs: dict
+
+    Example::
+
+        print_pretty('Hello {BG_RED}WORLD{END}')
+    '''
+
+    print('{}{}'.format(text.format(**styles).replace(styles['END'], styles['ALL_OFF']), styles['ALL_OFF']))

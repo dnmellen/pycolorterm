@@ -17,3 +17,8 @@ History
 ++++++++++++++++++
 
 * Added new shortcut function to print with format (print_pretty)
+
+0.2.1 (2013-09-28)
+++++++++++++++++++
+
+* Changed markup syntax from {} to <>

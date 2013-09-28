@@ -62,6 +62,10 @@ class TestPycolorterm(unittest.TestCase):
         print_pretty('{FG_RED}This{END} is a {BG_BLUE}{UNDERSCORE}more{END} complex {FG_GREEN}{BOLD}test')
         self.assertEquals(self._get_output(), '\x1b[31mThis\x1b[0m is a \x1b[44m\x1b[4mmore\x1b[0m complex \x1b[32m\x1b[1mtest\x1b[0m')
 
+    def test_issue_pre_formatting(self):
+        print_pretty('<FG_RED>This is a test<END> <FG_BLUE>{var1}<END> some variables'.format(var1="My var"))
+        self.assertEquals(self._get_output(), '\x1b[31mThis is a test\x1b[0m \x1b[34mMy var\x1b[0m some variables\x1b[0m')
+
     def tearDown(self):
         pass
 

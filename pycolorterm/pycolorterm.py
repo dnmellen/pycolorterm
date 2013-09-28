@@ -37,6 +37,16 @@ styles = {
     'END': '0e8ed89a-47ba-4cdb-938e-b8af8e084d5c',
 }
 
+def _prepare(text):
+    '''
+    Prepares text to style formatting
+
+    :param text: Input text
+    :type text: string
+    '''
+    
+    return text.replace('<', '{').replace('>', '}')  # Change <> to {}
+
 
 class pretty_output():
     '''
@@ -53,8 +63,10 @@ class pretty_output():
         pass
 
     def write(self, msg):
+        msg = _prepare(msg)
         style = ''.join(self.attributes)
         print('{}{}{}'.format(style, msg.replace(styles['END'], styles['ALL_OFF'] + style), styles['ALL_OFF']))
+
 
 def print_pretty(text, **kwargs):
     '''
@@ -70,4 +82,5 @@ def print_pretty(text, **kwargs):
         print_pretty('Hello {BG_RED}WORLD{END}')
     '''
 
+    text = _prepare(text)
     print('{}{}'.format(text.format(**styles).replace(styles['END'], styles['ALL_OFF']), styles['ALL_OFF']))

@@ -16,6 +16,15 @@ Using shortcut function
     print_pretty('{FG_RED}This{END} is a {BG_BLUE}{UNDERSCORE}more{END} complex {FG_GREEN}{BOLD}test')
 
 
+.. versionadded:: 0.2.1
+    Changed the markup from `{}` to `<>` to allow string pre-formatting
+
+.. code-block:: python
+
+    print_pretty('<FG_RED>You can add {}<END>'.format('Variables here'))
+
+
+
 Using context manager
 -----------------------
 

@@ -43,7 +43,7 @@ Usage
 
     from pycolorterm.pycolorterm import print_pretty
 
-    print_pretty('This is {BOLD}awesome{END} {FG_RED}because{END} you can {UNDERSCORE}mix{END} {BG_BLUE}many styles easily{END}')
+    print_pretty('This is <BOLD>awesome<END> <FG_RED>because<END> you can <UNDERSCORE>mix<END> <BG_BLUE>many styles easily<END>')
 
 
 Result

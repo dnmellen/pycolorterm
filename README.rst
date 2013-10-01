@@ -49,3 +49,10 @@ Usage
 Result
 ============
 .. image:: https://raw.github.com/dnmellen/pycolorterm/master/pycolorterm_example.png
+
+
+Did you like it?
+---------------
+.. image:: https://rawgithub.com/twolfson/gittip-badge/0.1.0/dist/gittip.png
+    :target: https://www.gittip.com/dnmellen/
+    :alt: gittip

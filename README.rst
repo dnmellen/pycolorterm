@@ -56,3 +56,9 @@ Did you like it?
 .. image:: https://rawgithub.com/twolfson/gittip-badge/0.1.0/dist/gittip.png
     :target: https://www.gittip.com/dnmellen/
     :alt: gittip
+
+
+.. image:: https://d2weczhvl823v0.cloudfront.net/dnmellen/pycolorterm/trend.png
+   :alt: Bitdeli badge
+   :target: https://bitdeli.com/free
+
